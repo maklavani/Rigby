@@ -1,1 +1,4 @@
-export type Theme = { color: string }
+export type Theme = {
+	color: string
+	drawerWidth: number
+}

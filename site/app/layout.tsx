@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import { dir } from 'i18next'
 import { Box } from '@mui/material'
 
@@ -15,6 +16,8 @@ import { useTranslation } from '@/helpers/i18n'
 
 // Components
 import ThemeRegistry from '@/components/theme/registry'
+
+const HeaderOrganism = dynamic(() => import('@/components/organisms/header'))
 
 // Metadata
 export const metadata = async () => {
@@ -60,7 +63,10 @@ export default async function RootLayout(props: LayoutProps) {
 		<html lang={i18nConfig.defaultLocale} dir={dir(i18nConfig.defaultLocale)}>
 			<ThemeRegistry>
 				<body>
-					<Box>{children}</Box>
+					<Box sx={{ display: 'flex' }}>
+						<HeaderOrganism />
+						{children}
+					</Box>
 				</body>
 			</ThemeRegistry>
 		</html>

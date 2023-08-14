@@ -2,6 +2,7 @@
 	"button": {
 		"dark": "Dark",
 		"light": "Light",
-		"system": "Auto"
+		"system": "Auto",
+		"twitter": "View on Twitter"
 	}
 }
