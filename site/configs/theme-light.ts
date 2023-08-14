@@ -9,12 +9,8 @@ const themeLightConfig = createTheme({
 	direction: dir(i18nConfig.defaultLocale),
 	palette: {
 		mode: 'light',
-		primary: { light: '#eec497', main: '#e39d52', dark: '#b57226', contrastText: '#fff' },
-		secondary: { light: '#75abf3', main: '#2f80ed', dark: '#115bbf', contrastText: '#fff' },
-		error: { main: '#eb6d78', contrastText: '#fff' },
-		warning: { main: '#e5bd5d' },
-		info: { main: '#f2adfd' },
-		success: { main: '#1abfaf', contrastText: '#fff' },
+		primary: { light: '#d7c2a1', main: '#b96', dark: '#937241', contrastText: '#fff' },
+		secondary: { light: '#da223e', main: '#98182b', dark: '#560e18', contrastText: '#fff' },
 		text: { primary: '#535353', secondary: '#8e8e8e' },
 		background: { default: '#f7f7f7' }
 	},

@@ -1,17 +1,12 @@
 // Primary colors
-$primary: #e39d52;
-$primary-light: #eec497;
-$primary-dark: #b57226;
+$primary: #b96;
+$primary-light: #d7c2a1;
+$primary-dark: #937241;
 
 // Secondary colors
-$secondary: #2f80ed;
-$secondary-light: #75abf3;
-$secondary-dark: #115bbf;
-
-// Tertiary colors
-$tertiary: #1abfaf;
-$tertiary-light: #25c3b4;
-$tertiary-dark: #15ac9d;
+$secondary: #98182b;
+$secondary-light: #da223e;
+$secondary-dark: #560e18;
 
 // Background colors
 $background: #f7f7f7;
@@ -21,26 +16,6 @@ $background-dark: #121212;
 $text: #000;
 $text-light: #8e8e8e;
 $text-dark: #fdfefd;
-$text-heading: #3e3e3e;
-$text-description: #767676;
-
-// Button colors
-$btn-primary: #1abfaf;
-$btn-primary-hover: #1cdbc9;
-$btn-secondary: #4bc463;
-$btn-secondary-hover: #67ec81;
-$btn-tertiary: #ab48fb;
-$btn-tertiary-hover: #be6cff;
-$btn-quaternary: #f18fff;
-$btn-quaternary-hover: #f2adfd;
-
-// Alert colors
-$alert-error: #eb6d78;
-$alert-warning: #e5bd5d;
-// $alert-info: #1edde5;
-// $alert-success: #1de49f;
-$alert-info: #f2adfd;
-$alert-success: #1abfaf;
 
 :export {
 	primary: $primary;
@@ -49,26 +24,9 @@ $alert-success: #1abfaf;
 	secondary: $secondary;
 	secondary-light: $secondary-light;
 	secondary-dark: $secondary-dark;
-	tertiary: $tertiary;
-	tertiary-light: $tertiary-light;
-	tertiary-dark: $tertiary-dark;
 	background: $background;
 	background-dark: $background-dark;
 	text: $text;
 	text-light: $text-light;
 	text-dark: $text-dark;
-	text-heading: $text-heading;
-	text-description: $text-description;
-	btn-primary: $btn-primary;
-	btn-primary-hover: $btn-primary-hover;
-	btn-secondary: $btn-secondary;
-	btn-secondary-hover: $btn-secondary-hover;
-	btn-tertiary: $btn-tertiary;
-	btn-tertiary-hover: $btn-tertiary-hover;
-	btn-quaternary: $btn-quaternary;
-	btn-quaternary-hover: $btn-quaternary-hover;
-	alert-error: $alert-error;
-	alert-warning: $alert-warning;
-	alert-info: $alert-info;
-	alert-success: $alert-success;
 }
