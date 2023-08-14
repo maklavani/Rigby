@@ -1,0 +1,12 @@
+# misc
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+.env
+.env.test
+.env.production
+
+# VS code
+.vscode

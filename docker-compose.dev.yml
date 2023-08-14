@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  site:
+    container_name: site
+    build:
+      context: ./site
+      dockerfile: dev.Dockerfile
+    environment:
+      ENV_VARIABLE: ${ENV_VARIABLE}
+      NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
+    env_file:
+      - .env
+    volumes:
+      - ./site/src:/app/src
+      - ./site/public:/app/public
+    restart: always
+    ports:
+      - 8877:8877
+    networks:
+      - rigby
+
+networks:
+  rigby:
+    external: true

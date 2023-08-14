@@ -1,0 +1,54 @@
+{
+	"plugins": [
+		"stylelint-prettier",
+		"stylelint-scss"
+	],
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-prettier-scss"
+	],
+	"customSyntax": "postcss-scss",
+	"rules": {
+		"at-rule-semicolon-newline-after": "always",
+		"at-rule-semicolon-space-before": "never",
+		"at-rule-no-unknown": null,
+		"block-closing-brace-newline-before": "always-multi-line",
+		"block-closing-brace-space-before": "always-single-line",
+		"block-no-empty": null,
+		"block-opening-brace-newline-after": "always-multi-line",
+		"block-opening-brace-space-before": "always-single-line",
+		"color-function-notation": "modern",
+		"declaration-block-no-shorthand-property-overrides": true,
+		"declaration-colon-newline-after": "always-multi-line",
+		"import-notation": "string",
+		"indentation": "tab",
+		"media-feature-colon-space-after": "always",
+		"media-feature-colon-space-before": "never",
+		"media-feature-parentheses-space-inside": "never",
+		"no-duplicate-selectors": true,
+		"no-empty-source": null,
+		"prettier/prettier": true,
+		"property-no-unknown": [
+			true,
+			{
+				"ignoreProperties": [
+					"primary",
+					"primary-light",
+					"primary-dark",
+					"secondary",
+					"secondary-light",
+					"secondary-dark",
+					"background",
+					"background-dark",
+					"text",
+					"text-light",
+					"text-dark"
+				]
+			}
+		],
+		"selector-class-pattern": null,
+		"selector-list-comma-newline-after": "never-multi-line",
+		"selector-pseudo-class-no-unknown": [true, { "ignorePseudoClasses": ["export", "global"] }],
+		"value-list-comma-newline-after": null
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "Peter C. Rigby",
+	"short_name": "Rigby",
+	"icons": [
+		{
+			"src": "images/favicon.ico",
+			"type": "image/x-icon",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "images/icon192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "images/icon512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": ".",
+	"display": "fullscreen",
+	"theme_color": "#e39d52",
+	"background_color": "#e39d52",
+	"lang": "en-CA",
+	"dir": "ltr",
+	"orientation": "any"
+}
