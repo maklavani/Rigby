@@ -10,6 +10,7 @@ import themeConfig from '@/configs/theme'
 import type { DrawerProps } from '@/types/components/molecules/drawer'
 
 // Components
+const ProfileMolecule = dynamic(() => import('@/components/molecules/profile'))
 const MenuMolecule = dynamic(() => import('@/components/molecules/menu'))
 
 const DrawerMolecule = (props: DrawerProps) => {
@@ -33,6 +34,7 @@ const DrawerMolecule = (props: DrawerProps) => {
 			open
 		>
 			<Toolbar />
+			<ProfileMolecule elevation={0} borderRadius={0} />
 			<MenuMolecule />
 		</Drawer>
 	)

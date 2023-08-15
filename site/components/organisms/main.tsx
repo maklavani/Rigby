@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import { Grid, Toolbar, Typography, Button } from '@mui/material'
 
 // Components
+const ProfileMolecule = dynamic(() => import('@/components/molecules/profile'))
 const PublicationsMolecule = dynamic(() => import('@/components/molecules/publications'))
 const TopTierMolecule = dynamic(() => import('@/components/molecules/top-tier'))
 const OtherReferredMolecule = dynamic(() => import('@/components/molecules/other-referred'))
@@ -13,6 +14,10 @@ const MainOrganism = () => {
 	return (
 		<Grid>
 			<Toolbar />
+
+			<Grid sx={{ display: { xs: 'flex', sm: 'none' } }}>
+				<ProfileMolecule />
+			</Grid>
 
 			<Typography id="bio" variant="h4" component="h3" gutterBottom>
 				Bio and Research Interests
