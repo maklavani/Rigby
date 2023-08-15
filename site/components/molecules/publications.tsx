@@ -105,7 +105,7 @@ const PublicationsMolecule = () => {
 
 	return (
 		<>
-			<Typography variant="h5" component="h3" gutterBottom>
+			<Typography id="publications" variant="h5" component="h3" gutterBottom>
 				Publications
 			</Typography>
 

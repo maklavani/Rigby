@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { Box, Toolbar, Typography, Button } from '@mui/material'
+import { Grid, Toolbar, Typography, Button } from '@mui/material'
 
 // Components
 const PublicationsMolecule = dynamic(() => import('@/components/molecules/publications'))
@@ -11,10 +11,10 @@ const TechnicalReportsMolecule = dynamic(() => import('@/components/molecules/te
 
 const MainOrganism = () => {
 	return (
-		<Box sx={{ width: '100%' }}>
+		<Grid>
 			<Toolbar />
 
-			<Typography variant="h4" component="h3" gutterBottom>
+			<Typography id="bio" variant="h4" component="h3" gutterBottom>
 				Bio and Research Interests
 			</Typography>
 
@@ -76,7 +76,7 @@ const MainOrganism = () => {
 			<TopTierMolecule />
 			<OtherReferredMolecule />
 
-			<Typography variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
+			<Typography id="dissertation" variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
 				Dissertation
 			</Typography>
 
@@ -89,7 +89,7 @@ const MainOrganism = () => {
 			</Typography>
 
 			<TechnicalReportsMolecule />
-		</Box>
+		</Grid>
 	)
 }
 

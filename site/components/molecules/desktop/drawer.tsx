@@ -1,5 +1,6 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { useTheme, Drawer, Toolbar } from '@mui/material'
 
 // Configurations
@@ -7,6 +8,9 @@ import themeConfig from '@/configs/theme'
 
 // Types
 import type { DrawerProps } from '@/types/components/molecules/drawer'
+
+// Components
+const MenuMolecule = dynamic(() => import('@/components/molecules/menu'))
 
 const DrawerMolecule = (props: DrawerProps) => {
 	// Props
@@ -21,7 +25,7 @@ const DrawerMolecule = (props: DrawerProps) => {
 			sx={{
 				display: { xs: 'none', sm: 'block' },
 				'& .MuiDrawer-paper': {
-					width: !open ? theme.spacing(7) : themeConfig.drawerWidth,
+					width: !open ? 0 : themeConfig.drawerWidth,
 					boxSizing: 'border-box',
 					zIndex: theme.zIndex.appBar
 				}
@@ -29,6 +33,7 @@ const DrawerMolecule = (props: DrawerProps) => {
 			open
 		>
 			<Toolbar />
+			<MenuMolecule />
 		</Drawer>
 	)
 }

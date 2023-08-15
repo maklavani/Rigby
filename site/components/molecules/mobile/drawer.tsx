@@ -1,5 +1,6 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { SwipeableDrawer } from '@mui/material'
 
 // Configurations
@@ -7,6 +8,9 @@ import themeConfig from '@/configs/theme'
 
 // Types
 import type { DrawerProps } from '@/types/components/molecules/drawer'
+
+// Components
+const MenuMolecule = dynamic(() => import('@/components/molecules/menu'))
 
 const DrawerMolecule = (props: DrawerProps) => {
 	// Props
@@ -25,7 +29,9 @@ const DrawerMolecule = (props: DrawerProps) => {
 					boxSizing: 'border-box'
 				}
 			}}
-		></SwipeableDrawer>
+		>
+			<MenuMolecule />
+		</SwipeableDrawer>
 	)
 }
 

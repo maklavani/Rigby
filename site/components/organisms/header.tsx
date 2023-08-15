@@ -69,7 +69,7 @@ const HeaderOrganism = () => {
 				</Toolbar>
 			</AppBar>
 
-			<Box component="nav" sx={{ width: { sm: !open ? theme.spacing(7) : themeConfig.drawerWidth }, flexShrink: { sm: 0 } }}>
+			<Box component="nav" sx={{ width: { sm: !open ? 0 : themeConfig.drawerWidth }, flexShrink: { sm: 0 } }}>
 				<DrawerMobileMolecule open={open} setOpen={setOpen} />
 				<DrawerDesktopMolecule open={open} setOpen={setOpen} />
 			</Box>

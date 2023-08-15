@@ -44,7 +44,7 @@ const TopTierMolecule = () => {
 
 	return (
 		<>
-			<Typography variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
+			<Typography id="top-tier" variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
 				Top-tier Journal and Conference Publications
 			</Typography>
 

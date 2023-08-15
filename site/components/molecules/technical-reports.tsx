@@ -17,7 +17,7 @@ const TechnicalReportsMolecule = () => {
 
 	return (
 		<>
-			<Typography variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
+			<Typography id="technical" variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
 				Technical Reports
 			</Typography>
 
