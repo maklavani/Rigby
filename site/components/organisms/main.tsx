@@ -6,6 +6,7 @@ import { Box, Toolbar, Typography, Button } from '@mui/material'
 // Components
 const PublicationsMolecule = dynamic(() => import('@/components/molecules/publications'))
 const TopTierMolecule = dynamic(() => import('@/components/molecules/top-tier'))
+const OtherReferredMolecule = dynamic(() => import('@/components/molecules/other-referred'))
 
 const MainOrganism = () => {
 	return (
@@ -72,6 +73,7 @@ const MainOrganism = () => {
 
 			<PublicationsMolecule />
 			<TopTierMolecule />
+			<OtherReferredMolecule />
 		</Box>
 	)
 }

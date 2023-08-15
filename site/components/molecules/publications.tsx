@@ -126,13 +126,14 @@ const PublicationsMolecule = () => {
 									<TableCell>{paper.text}</TableCell>
 
 									<TableCell>
-										{paper.links.map((item, index) => {
-											return (
-												<Button key={index} href={item.link} target="_black" sx={{ textTransform: 'capitalize' }}>
-													{item.title}
-												</Button>
-											)
-										})}
+										{paper.links &&
+											paper.links.map((item, index) => {
+												return (
+													<Button key={index} href={item.link} target="_black" sx={{ textTransform: 'capitalize' }}>
+														{item.title}
+													</Button>
+												)
+											})}
 									</TableCell>
 								</TableRow>
 							)

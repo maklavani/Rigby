@@ -1,6 +1,8 @@
 # Release notes
 All notable changes to this project will be documented in this file.
 
+- Added `Other referred` molecule
+
 ## 0.3.0
 - Added `Top Tier` molecule
 
