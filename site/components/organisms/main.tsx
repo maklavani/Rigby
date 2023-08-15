@@ -7,6 +7,7 @@ import { Box, Toolbar, Typography, Button } from '@mui/material'
 const PublicationsMolecule = dynamic(() => import('@/components/molecules/publications'))
 const TopTierMolecule = dynamic(() => import('@/components/molecules/top-tier'))
 const OtherReferredMolecule = dynamic(() => import('@/components/molecules/other-referred'))
+const TechnicalReportsMolecule = dynamic(() => import('@/components/molecules/technical-reports'))
 
 const MainOrganism = () => {
 	return (
@@ -74,6 +75,20 @@ const MainOrganism = () => {
 			<PublicationsMolecule />
 			<TopTierMolecule />
 			<OtherReferredMolecule />
+
+			<Typography variant="h5" component="h3" gutterBottom sx={{ mt: 2 }}>
+				Dissertation
+			</Typography>
+
+			<Typography variant="body1" textAlign="justify" gutterBottom sx={{ mb: 3 }}>
+				Peter C. Rigby. Understanding Open Source Software Peer Review: Review Processes, Parameters and Statistical Models, and Underlying Behaviours and Mechanisms.{' '}
+				<Button href="/paper/Rigby2011Dissertation.pdf" target="_black" sx={{ py: 0, px: 0.5, textTransform: 'capitalize' }}>
+					Rigby2011Dissertation.pdf
+				</Button>
+				, Dissertation, 2011
+			</Typography>
+
+			<TechnicalReportsMolecule />
 		</Box>
 	)
 }
