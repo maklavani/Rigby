@@ -71,11 +71,21 @@ const HeaderButtonsMolecule = () => {
 				</MenuList>
 			</Menu>
 
-			<Button variant="contained" color="blue" startIcon={<TwitterIcon />} disableElevation sx={{ display: { xs: 'none', sm: 'inline-flex' } }}>
+			<Button
+				href="https://twitter.com/rigbypc"
+				target="_blank"
+				variant="contained"
+				color="blue"
+				startIcon={<TwitterIcon />}
+				disableElevation
+				sx={{ display: { xs: 'none', sm: 'inline-flex' } }}
+			>
 				{t('form:button.twitter')}
 			</Button>
 
 			<Button
+				href="https://twitter.com/rigbypc"
+				target="_blank"
 				variant="contained"
 				color="blue"
 				disableElevation

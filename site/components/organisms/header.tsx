@@ -33,6 +33,8 @@ const HeaderOrganism = () => {
 				elevation={0}
 				variant="outlined"
 				sx={{
+					borderWidth: 0,
+					borderBottomWidth: 'thin',
 					zIndex: theme.zIndex.drawer
 				}}
 			>

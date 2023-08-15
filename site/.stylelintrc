@@ -37,12 +37,7 @@
 					"primary-dark",
 					"secondary",
 					"secondary-light",
-					"secondary-dark",
-					"background",
-					"background-dark",
-					"text",
-					"text-light",
-					"text-dark"
+					"secondary-dark"
 				]
 			}
 		],

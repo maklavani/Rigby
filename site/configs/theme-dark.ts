@@ -12,8 +12,6 @@ const themeDarkConfig = createTheme({
 		mode: 'dark',
 		primary: { light: '#d7c2a1', main: '#b96', dark: '#937241', contrastText: '#fff' },
 		secondary: { light: '#da223e', main: '#98182b', dark: '#560e18', contrastText: '#fff' },
-		text: { primary: '#fdfefd', secondary: '#eee' },
-		background: { default: '#121212' },
 		blue: createTheme().palette.augmentColor({ color: { light: blue[300], main: blue[500], dark: blue[700], contrastText: '#fff' } })
 	},
 	shape: { borderRadius: 5 },
