@@ -1,6 +1,7 @@
 # Release notes
 All notable changes to this project will be documented in this file.
 
+## 0.4.0
 - Added `Other referred` molecule
 
 ## 0.3.0
