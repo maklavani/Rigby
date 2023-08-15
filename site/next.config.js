@@ -20,6 +20,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // Configurations
 const nextConfig = {
 	// output: 'standalone',
+	output: 'export',
 	reactStrictMode: true,
 	productionBrowserSourceMaps: true,
 	sassOptions: { includePaths: [path.join(__dirname, 'styles')] }

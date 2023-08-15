@@ -1,6 +1,8 @@
 # Release notes
 All notable changes to this project will be documented in this file.
 
+- Change output mode
+
 ## 0.6.0
 - Added `profile` molecule
 
