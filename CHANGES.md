@@ -1,6 +1,8 @@
 # Release notes
 All notable changes to this project will be documented in this file.
 
+- Added `Top Tier` molecule
+
 ## 0.2.0
 - Added Content to project
 
